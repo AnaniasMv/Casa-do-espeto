@@ -1,0 +1,20 @@
+
+
+#textocardapio{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.cardapio{
+    display: flex;
+   list-style: none;
+   flex-wrap: wrap; // Quebra a linha
+   
+}
+
+.cardapio li{
+    margin: 100px;
+}

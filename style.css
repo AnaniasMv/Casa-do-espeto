@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&family=Teko&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    position: relative;
+    margin: auto;
+    min-width: 320px;
+    max-width: 100%;
+}
+
+
+/* MENU  */
+nav{
+    box-shadow: 4px 4px  3px rgba(0, 0, 0, 0.089);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    letter-spacing: 3px;
+    padding: 0 30px;
+}
+
+
+nav ul a{
+    font-weight: 500;
+text-decoration: none;
+transition: 0.4s;
+}
+
+nav ul a:hover{
+    padding: 30px;
+    background: #FF8809;
+    color: white;
+}
+
+button{
+    position: absolute;
+    display: none;
+    right: 40px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 32px;
+    transition: .2s;
+}
+
+button:focus ~ .menu{
+    display: block;
+    transition: .5s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+@media (max-width:700px){
+
+    nav{
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .menu{
+        background: rgba(0, 0, 0, 0.068);
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+   .menu li{
+       padding: 40px;
+   }
+
+
+    button{
+        top: 15px;
+        display: flex;
+    }
+}
+
+/* FIM MENU */
+
+
+
+
+
+
+/* banner */
+.banner{
+    margin-top: 15px;
+    background: url(imagens/banner4.jpg) no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+    text-align: center;
+}
+
+
+.banner h1{
+    position: relative;
+    margin:auto;
+    top: 20%;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    background-color;
+    font-size: 4vw; 
+    text-transform: uppercase;
+    text-shadow: black 8px 7px 6px;
+}
+
+@media (max-width: 870px){
+    .banner h1{font-size: 3.2em;}
+}
+
+
+@media (max-width: 650px){
+    .banner h1{font-size: 2.8em;}
+}
+
+
+
+.banner a{
+    position: relative;
+    margin:auto;
+    top: 30%;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 16px;
+    font-size: 20px ; 
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #E85802;
+    text-transform: uppercase;
+    padding: 25px;
+
+}
+
+
+
+.banner a:hover{
+    background-color: #FF8809;
+    transition: background .4s;
+}
+/* FIM BANNER */
+
+
+
+
+
+/* Combos */
+#texto h2{
+    margin-top: 100px;
+    font-family:  'Permanent Marker', cursive;
+    text-align: center;
+    color:black ;
+    font-size: 90px;
+    
+}
+
+@media (max-width: 500px){
+    #texto h2{font-size: 3.2em;}
+}
+
+
+
+
+#texto p{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: 65px;
+    color: black;
+    font-size: 75px;
+}
+
+
+@media (max-width: 500px){
+    #texto p{font-size: 3.1em;}
+}
+
+
+
+
+/* FIM COMBOS*/
+
+
+
+
+
+/*RODAPÉ*/
+
+.rodape{
+    margin-top: 150px;
+  display: flex;
+  padding: 75px;
+  background-color: #E85802;
+}
+
+
+.rodape li{
+    margin: auto;
+    list-style: none;
+}
+
+.rodape h3 a{
+    color: white;
+}
+
+.rodape a{
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 42px;
+}
+
+.rodape a:hover{
+    color: black;
+    transition: .2s;
+}
+
+
+#textorodape{
+    color: rgb(56, 56, 56);
+    font-size: 17px;
+    padding: 16px;
+    text-align: center;
+    background-color: #E89502;
+}
+
+/*FIM RODAPÉ*/
