@@ -153,7 +153,6 @@ button:hover{
 }
 
 
-
 .banner a:hover{
     background-color: #FF8809;
     transition: background .4s;
@@ -165,36 +164,34 @@ button:hover{
 
 
 /* Combos */
-#texto h2{
-    margin-top: 100px;
-    font-family:  'Permanent Marker', cursive;
+.combos{
+    padding: 50px;
+    display: flex;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+}
+
+
+@media (max-width:1024px){
+    .combos{
+        display: block;
+    }
+
+    .espetos{
+        padding: 50px;
+    }
+}
+
+#textocombo{
     text-align: center;
-    color:black ;
-    font-size: 90px;
     
 }
 
-@media (max-width: 500px){
-    #texto h2{font-size: 3.2em;}
-}
-
-
-
-
-#texto p{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.espetos{
     text-align: center;
-    margin-top: 65px;
-    color: black;
-    font-size: 75px;
+    padding: 80px;
 }
-
-
-@media (max-width: 500px){
-    #texto p{font-size: 3.1em;}
-}
-
-
 
 
 /* FIM COMBOS*/
