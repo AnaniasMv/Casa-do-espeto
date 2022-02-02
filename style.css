@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
 
 *{
     padding: 0;
@@ -18,7 +20,10 @@ main{
 
 
 /* MENU  */
+
+
 nav{
+    background: white;
     box-shadow: 4px 4px  3px rgba(0, 0, 0, 0.089);
     display: flex;
     justify-content: space-around;
@@ -38,6 +43,7 @@ nav ul li{
 
 
 nav ul a{
+    color: black;
     font-weight: 500;
 text-decoration: none;
 transition: 0.4s;
@@ -55,7 +61,7 @@ button{
     right: 40px;
     background-color: transparent;
     border: none;
-    color: black;
+    color:black;
     font-size: 32px;
     transition: .2s;
 }
@@ -67,7 +73,7 @@ button:focus ~ .menu{
 
 button:hover{
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.158);
+    background-color: rgba(110, 102, 102, 0.26);
 }
 
 @media (max-width:700px){
@@ -104,10 +110,10 @@ button:hover{
 
 /* banner */
 .banner{
-    margin-top: 15px;
+    margin-top: 9px;
     background: url(imagens/banner4.jpg) no-repeat center center;
     background-size: cover;
-    height: 70vh;
+    height: 100vh;
     text-align: center;
 }
 
@@ -115,13 +121,33 @@ button:hover{
 .banner h1{
     position: relative;
     margin:auto;
-    top: 20%;
-    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 8px;
+    font-weight: lighter;
+    top: 30%;
+    font-family: 'Roboto', sans-serif;
     color: white;
     background-color;
-    font-size: 4vw; 
+    font-size: 48px; 
     text-transform: uppercase;
-    text-shadow: black 8px 7px 6px;
+ 
+}
+
+@media (max-width:800px){
+    .banner h1, h2{
+        font-size: 35px;
+    }
+
+}
+
+.banner h2{
+    color: #DDCAC9;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-transform: uppercase;
+    top:30%
 }
 
 @media (max-width: 870px){
@@ -138,15 +164,16 @@ button:hover{
 .banner a{
     position: relative;
     margin:auto;
-    top: 30%;
+    top: 40%;
     font-family: sans-serif;
-    font-weight: bold;
-    border-radius: 16px;
-    font-size: 20px ; 
-    color: white;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    font-size: 1.8vh; 
+    color: #FF8809;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #E85802;
+    background-color: transparent;
+    border: solid #FF8809;
     text-transform: uppercase;
     padding: 25px;
 
@@ -154,8 +181,17 @@ button:hover{
 
 
 .banner a:hover{
+    color: white;
     background-color: #FF8809;
     transition: background .4s;
+}
+
+.banner h1:hover{
+    text-decoration: underline;
+}
+
+.banner h2:hover{
+    text-decoration: underline;
 }
 /* FIM BANNER */
 
@@ -163,83 +199,3 @@ button:hover{
 
 
 
-/* Combos */
-.combos{
-    padding: 50px;
-    display: flex;
-    max-width: 800px;
-    min-width: 300px;
-    margin: auto;
-}
-
-
-@media (max-width:1024px){
-    .combos{
-        display: block;
-    }
-
-    .espetos{
-        padding: 50px;
-    }
-}
-
-#textocombo{
-    text-align: center;
-    
-}
-
-.espetos{
-    text-align: center;
-    padding: 80px;
-}
-
-
-/* FIM COMBOS*/
-
-
-
-
-
-/*RODAPÉ*/
-
-.rodape{
-    margin-top: 150px;
-  display: flex;
-  padding: 75px;
-  background-color: #E85802;
-}
-
-
-.rodape li{
-    margin: auto;
-    list-style: none;
-}
-
-.rodape h3 a{
-    color: white;
-}
-
-.rodape a{
-    display: block;
-    font-size: 18px;
-    text-decoration: none;
-    color: rgb(224, 224, 224);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 42px;
-}
-
-.rodape a:hover{
-    color: black;
-    transition: .2s;
-}
-
-
-#textorodape{
-    color: rgb(56, 56, 56);
-    font-size: 17px;
-    padding: 16px;
-    text-align: center;
-    background-color: #E89502;
-}
-
-/*FIM RODAPÉ*/
