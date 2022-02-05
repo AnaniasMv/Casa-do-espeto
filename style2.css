@@ -1,8 +1,6 @@
 
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+
 }
 
 /* MENU  */
@@ -86,61 +84,3 @@ button:hover{
 }
 
 /* FIM MENU */
-
-
-
-
-/* Cardapio */
-.cardapio{
-    display: flex;
-    max-width: 1400px;
-    min-width: 320px;
-    margin: auto;
-}
-
-.cardapio img{
-    width: 100%;
-}
-
-
-@media (max-width:1024px){
-    .cardapio{
-        display: block;
-    }
-
-    .cardapio img{
-        position: relative;
-        width: 50%;
-    }
-}
-
-@media (max-width:650px){
-    .cardapio img{
-        width: 80%;
-    }
-
-    #logo{
-        margin:auto;
-    }
-}
-
-
-
-#textocardapio{
-    text-align: center;
-    margin-top: 90px;
-}
-
-#textocardapio h1{
-    font-size: 50px;
-    font-family:'Roboto', sans-serif;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-}
-
-.espetos{
-    text-align: center;
-    padding: 50px;
-
-}
-/* FIM CARDAPIO*/

@@ -83,12 +83,18 @@ button:hover{
         align-items: unset;
     }
 
+    .logo{
+        margin-left: 60px;
+        width: 185px;
+    }
+
     .menu{
-        background: rgba(0, 0, 0, 0.068);
         display: none;
         flex-direction: column;
         text-align: center;
     }
+
+    
 
    .menu li{
        padding: 40px;

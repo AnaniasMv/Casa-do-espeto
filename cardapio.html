@@ -6,6 +6,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style2.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #produtos {
+            flex-wrap: wrap;
+            font-family: 'Roboto', sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2%;
+            display: flex;
+        }
+
+        #carrinho {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2%;
+            display: block;
+        }
+
+
+        .produtos-single {
+
+            width: 32%;
+            margin-right: 1%;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .produtos-single img {
+            max-width: 100%;
+            display: block;
+            margin: auto;
+
+        }
+
+        .produtos-single p {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            background-color: #FF8809;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .produtos-single a {
+            text-decoration: none;
+            color: white;
+            background-color: #5fb382;
+            text-align: center;
+            display: block;
+            padding: 9px 0;
+            font-size: 18px;
+        }
+
+        .info-single-checkout{
+            border-bottom: 2px solid dotted;
+            padding: 10px 0;
+        }
+        @media screen and (max-width:768px) {
+            .produtos-single {
+                width: 100%;
+
+            }
+
+            .produtos-single img {
+                width: 100%;
+
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -23,36 +106,83 @@
         </nav>
     </header>
     <!----FIM MENU------>
+    <h2>Vitrine</h2>
+    <div id="produtos">
 
-    <!--Cardapio-->
-    <section class="cardapio">
-        <div class="espetos">
-            <h2>Carne Bovina</h1>
-                <img src="imagens/carne.jpg">
-                <p>Espetinho de carne assada + acompanhamento</p>
-                <h3>R$6,00</h3>
-                <a href="#">Fazer pedido</a>
-        </div>
+    </div>
+    <h2>Carrinho</h2>
+    <div id="carrinho">
 
-        <div class="espetos">
-            <h2>Frango</h1>
-                <img src="imagens/frango.jpg">
-                <p>Espetinho de carne assada + acompanhamento</p>
-                <h3>R$6,00</h3>
-                <a href="#">Fazer pedido</a>
-        </div>
+    </div>
 
-        <div class="espetos">
-            <h2>Kafta</h1>
-                <img src="imagens/IMG-Kafta.jpg">
-                <p>Espetinho de carne assada + acompanhamento</p>
-                <h3>R$6,00</h3>
-                <a href="#">Fazer pedido</a>
-        </div>
+    <script>
+        const items = [
+            {
+                id: 0,
+                nome: 'Carne Bovina',
+                img: 'carne.jpg',
+                quantidade: 0
+            },
 
-       
-    </section>
-    <!---Fim Cardapio-->
+            {
+                id: 1,
+                nome: 'Frango',
+                img: 'carne.jpg',
+                quantidade: 0
+            },
+            {
+                id: 2,
+                nome: 'Kafta',
+                img: 'image.jpg',
+                quantidade: 0
+            },
+        ]
+
+
+
+
+        inicializarLoja = () => {
+            var containerProdutos = document.getElementById('produtos');
+            items.map((val) => {
+                containerProdutos.innerHTML += `
+               <div class="produtos-single">
+               <img src="carne.jpg">
+               <p>`+ val.nome + `</p>
+               <a key="`+ val.id + `"href="#">Adicionar ao carrinho</a>
+               </div>
+
+               `;
+            })
+        }
+        inicializarLoja();
+
+        atualizarCarrinho = () => {
+            var containerCarrinho = document.getElementById('carrinho');
+            containerCarrinho.innerHTML = ""
+            items.map((val) => {
+                if (val.quantidade > 0) {
+                    containerCarrinho.innerHTML += `
+                    <div class="info-single-checkout">
+                    <p style= "float:left;">Produto: `+val.nome +`</p>
+                    <p style="float:right;">Quantidade: `+val.quantidade+`</p>
+                    <div style="clear:both"></div>
+               <hr>
+               </div>
+               `;
+                }
+            })
+        }
+        var links = document.getElementsByTagName('a');
+        for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", function () {
+                let key = this.getAttribute('key');
+                items[key].quantidade++;
+                atualizarCarrinho();
+                return false;
+            })
+        }
+
+    </script>
 
 </body>
 
