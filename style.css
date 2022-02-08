@@ -116,6 +116,7 @@ button:hover{
 
 /* banner */
 .banner{
+    position: relative;
     margin-top: 9px;
     background: url(imagens/banner4.jpg) no-repeat center center;
     background-size: cover;
@@ -168,9 +169,9 @@ button:hover{
 
 
 .banner a{
-    position: relative;
-    margin:auto;
-    top: 40%;
+    display: block;
+    margin: auto;
+    width: 230px;
     font-family: sans-serif;
     font-weight: lighter;
     letter-spacing: 3px;
