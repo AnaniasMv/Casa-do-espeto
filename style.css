@@ -71,6 +71,8 @@ button:focus ~ .menu{
     transition: .5s;
 }
 
+
+
 button:hover{
     cursor: pointer;
     background-color: rgba(110, 102, 102, 0.26);
@@ -171,16 +173,16 @@ button:hover{
 .banner a{
     display: block;
     margin: auto;
+    margin-top: 310px;
     width: 230px;
     font-family: sans-serif;
     font-weight: lighter;
     letter-spacing: 3px;
     font-size: 1.8vh; 
-    color: #FF8809;
+    color: white;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: transparent;
-    border: solid #FF8809;
+    background-color: #ee7e06;
     text-transform: uppercase;
     padding: 25px;
 
@@ -189,7 +191,7 @@ button:hover{
 
 .banner a:hover{
     color: white;
-    background-color: #FF8809;
+    background-color: #ff9100c4;
     transition: background .4s;
 }
 
@@ -202,6 +204,49 @@ button:hover{
 }
 /* FIM BANNER */
 
+/*RODAPÉ*/
+
+.rodape{
+    display: flex;
+    padding: 75px;
+    background-color: #E85802;
+  }
+  
+  
+  .rodape li{
+      margin: auto;
+      list-style: none;
+  }
+  
+  .rodape h3 a{
+      color: white;
+  }
+  
+  .rodape a{
+      display: block;
+      font-size: 18px;
+      text-decoration: none;
+      color: rgb(224, 224, 224);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      line-height: 42px;
+  }
+  
+  .rodape a:hover{
+      color: black;
+      transition: .2s;
+  }
+  
+  
+  #textorodape{
+      color: rgb(56, 56, 56);
+      font-size: 17px;
+      padding: 16px;
+      text-align: center;
+      background-color: #E89502;
+  }
+  
+  /*FIM RODAPÉ*/
+  
 
 
 
