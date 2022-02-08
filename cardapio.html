@@ -9,102 +9,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-    <style>
-        * {
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        #produtos {
-            flex-wrap: wrap;
-            font-family: 'Roboto', sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 2%;
-            display: flex;
-        }
-
-        #carrinho {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 2%;
-            display: block;
-        }
-
-
-        .produtos-single {
-
-            width: 32%;
-            margin-right: 1%;
-            border: 1px solid #ccc;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        .produtos-single img {
-            max-width: 100%;
-            display: block;
-            margin: auto;
-
-        }
-
-        .produtos-single p {
-            font-family: 'Roboto', sans-serif;
-            text-align: center;
-            font-size: 16px;
-            padding: 10px;
-        }
-
-        h2 {
-            font-family: 'Roboto', sans-serif;
-            background-color: #FF8809;
-            padding: 10px 0;
-            text-align: center;
-            color: white;
-        }
-
-        .produtos-single a {
-            text-decoration: none;
-            color: white;
-            background-color: #5fb382;
-            text-align: center;
-            display: block;
-            padding: 9px 0;
-            font-size: 18px;
-        }
-
-        .info-single-checkout{
-            border-bottom: 2px solid dotted;
-            padding: 10px 0;
-        }
-        @media screen and (max-width:768px) {
-            .produtos-single {
-                width: 100%;
-
-            }
-
-            .produtos-single img {
-                width: 100%;
-
-            }
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/0cd6cdecb3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!----Menu---------->
     <header>
-        <nav>
-            <a class="logo" href="index.html"><img src="logonova.png"></a>
-            <button>&#9776;</button>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="cardapio.html">Cardápio</a></li>
-                <li><a href="#">Como chegar</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="center">
+            <div class="logo">
+                <img src="/logonova.png" alt="">
+            </div>
+
+            <div class="menu-desktop">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cardapio.html">Cardapio</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <!--Desktop-->
+
+            <div class="menu-mobile">
+                <a class="icon-menu"><i class="fas fa-bars"></i></a>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cardapio.html">Cardapio</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <!--Mobile-->
+        </div>
+        <!--Center-->
     </header>
+
+
     <!----FIM MENU------>
     <h2>Confira nosso cardapio:</h2>
     <div id="produtos">
@@ -163,8 +103,8 @@
                 if (val.quantidade > 0) {
                     containerCarrinho.innerHTML += `
                     <div class="info-single-checkout">
-                    <p style= "float:left;">Produto: `+val.nome +`</p>
-                    <p style="float:right;">Quantidade: `+val.quantidade+`</p>
+                    <p style= "float:left;">Produto: `+ val.nome + `</p>
+                    <p style="float:right;">Quantidade: `+ val.quantidade + `</p>
                     <div style="clear:both"></div>
                <hr>
                </div>
@@ -181,6 +121,17 @@
                 return false;
             })
         }
+
+        var menuBar = document.querySelector('.icon-menu');
+        menuBar.addEventListener('click',(e)=>{
+            e.preventDefault();
+            let menuMobile = document.querySelector('.menu-mobile ul');
+            if (menuMobile.classList.contains('show-menu')){
+                menuMobile.classList.remove('show-menu');
+            }else{
+                menuMobile.classList.add('show-menu');
+            }
+        });
 
     </script>
 
