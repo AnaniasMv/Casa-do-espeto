@@ -33,6 +33,7 @@ main{
 
 header{
     background-color: white;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.096);
 }
 
 .logo{
@@ -62,8 +63,16 @@ header{
 
 .menu-mobile i{
     cursor: pointer;
-    color: black;
-    font-size: 19px;
+    padding: 5px;
+    margin-right: 30px;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.767);
+    font-size: 30px;
+    transition: .2s;
+}
+
+.menu-mobile i:hover{
+    background-color: rgba(0, 0, 0, 0.185);
 }
 .menu-mobile ul{
     opacity: 0;
@@ -160,7 +169,7 @@ header{
 .banner a{
     display: block;
     margin: auto;
-    margin-top: 310px;
+    margin-top: 300px;
     width: 230px;
     font-family: sans-serif;
     font-weight: lighter;
