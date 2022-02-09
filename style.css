@@ -18,30 +18,21 @@ main{
 }
 
 
-
 /* MENU  */
-.center{
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 header{
     background-color: white;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.096);
+    height: 123px;
 }
 
 .logo{
-    width: 50%;
-    position: relative;
-    left: 20%;
+    position: absolute;
+    margin-left: 20%;
 }
 
 .menu-desktop{
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
+    position: absolute;
+    left: 45%;
 }
 
 .menu-desktop ul li{
@@ -65,20 +56,26 @@ header{
 }
 
 .menu-mobile ul li a:hover{
-    background-color: #ee6306;
-    color: white;
+    color: rgba(0, 0, 0, 0.596);
 }
 
-.menu-mobile{display: none;text-align: right; width: 50%;}
+.menu-mobile{
+    display: none;
+    text-align: right;
+    
+}    
 
 .menu-mobile i{
     cursor: pointer;
+    position: relative;
+    right: 0;
     padding: 5px;
     margin-right: 30px;
     margin-top: 30px;
     color: rgba(0, 0, 0, 0.767);
     font-size: 30px;
     transition: .2s;
+    
 }
 
 .menu-mobile i:hover{
@@ -86,9 +83,9 @@ header{
 }
 .menu-mobile ul{
     opacity: 0;
-    list-style: none;
     transition: 1s;
-    background-color:  white;
+    list-style: none;
+    background-color:  #f17019;
     display: block;
     width: 100%;
     position: absolute;
@@ -96,6 +93,7 @@ header{
     top: 105px;
     text-align: center;
     z-index: 10;
+    padding: 50px;
 }
 
 .show-menu{
@@ -105,12 +103,12 @@ header{
 
 .menu-mobile ul li a{
     display: block;
-    color: black;
+    color: white;
     text-decoration: none;
-    font-size: 20px;
-    letter-spacing: 2px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 32px  ;
+    font-size: 21px;
+    letter-spacing: 4px;
+    font-family: 'Roboto', sans-serif ;
+    line-height: 100px;
     transition: .3s;
 }
 
@@ -198,7 +196,6 @@ header{
     padding: 25px;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.644);
-
 }
 
 
@@ -225,7 +222,7 @@ header{
 .rodape{
     display: flex;
     padding: 75px;
-    background-color: #E85802;
+    background-color: #f17019;
     margin: 0;
   }
   
