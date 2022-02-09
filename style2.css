@@ -5,81 +5,50 @@
     box-sizing: border-box;
 }
 
-#produtos {
-    flex-wrap: wrap;
-    font-family: 'Roboto', sans-serif;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 2%;
-    display: flex;
-}
-
-#carrinho {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 2%;
-    display: block;
-}
-
-
-.produtos-single {
-
-    width: 32%;
-    margin-right: 1%;
-    border: 1px solid #ccc;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.produtos-single img {
-    max-width: 100%;
-    display: block;
+main{
     margin: auto;
-
+    max-width: 1350px;
+    min-width: 320px;
 }
 
-.produtos-single p {
+main h1{
+    margin-top: 20px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.377);
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.produtos{
+    display: flex;
     text-align: center;
-    font-size: 16px;
-    padding: 10px;
+    justify-content: space-between;
+    
 }
 
-h2 {
-    font-family: 'Roboto', sans-serif;
-    background-color: #FF8809;
-    margin-top: 102px;
-    padding: 10px 0;
-    text-align: center;
-    color: white;
+.espeto{
+    margin-bottom: 100px;
+    padding: 50px;
+    
 }
 
-.produtos-single a {
-    text-decoration: none;
-    color: white;
-    background-color: #5fb382;
-    text-align: center;
-    display: block;
-    padding: 9px 0;
-    font-size: 18px;
+.produtos img{
+    width: 100%;
 }
 
-.info-single-checkout{
-    border-bottom: 2px solid dotted;
-    padding: 10px 0;
-}
-@media screen and (max-width:768px) {
-    .produtos-single {
-        width: 100%;
-
+@media (max-width:1050px){
+    .produtos{
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    .espeto{
+        margin-bottom: 200px;
     }
 
-    .produtos-single img {
-        width: 100%;
-
-    }
+    .
 }
-
 /* MENU  */
 .center{
     padding: 0 2%;
