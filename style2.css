@@ -11,6 +11,10 @@ main{
     min-width: 320px;
 }
 
+body{
+    background-color: rgba(204, 204, 204, 0.219);
+}
+
 main h1{
     margin-top: 20px;
     text-align: center;
@@ -127,8 +131,10 @@ header{
 
 .container{
     display: grid;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: auto;
+    grid-row-gap: 230px;
+    grid-column-gap: 130px;
     grid-template-areas: 
     "espeto espeto espeto"
     "espeto espeto espeto"
@@ -137,26 +143,40 @@ header{
     "espeto espeto espeto"
     "espeto espeto espeto";
     padding: 20px;
-     
 }
 
 .container img{
     width: 100%;
-    border-radius: 20px;
 }
 
 .espeto{
     max-width: 300px;
     min-width: 250px;
     height: 300px;
-    margin: 0px 20px 0px 40px;
-
+    margin: auto;
+    text-align: center;
 }
 
-@media (max-width:1024px){
+.conteudo{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteudo h2{
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+.conteudo img{
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width:1050px){
     .container{
         display: grid;
-        max-width: 1200px;
+        max-width: 1600px;
+        grid-row-gap: 230px;
         margin: auto;
         grid-template-areas: 
         "espeto espeto"
@@ -173,6 +193,7 @@ header{
         min-width: 250px;
         height: 300px;
         margin: auto;
+        padding: 20px;
     
     }
 }
@@ -180,8 +201,8 @@ header{
 @media (max-width:660px){
     .container{
         display: grid;
-        max-width: 1200px;
-        grid-row-gap:50px;
+        max-width: 1600px;
+        grid-row-gap:230px;
         grid-template-areas: 
         "espeto"
         "espeto"
