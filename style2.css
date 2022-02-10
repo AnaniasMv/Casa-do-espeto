@@ -125,32 +125,79 @@ header{
 
 
 
-/* Cardápio*/
-.produtos{
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    
+.container{
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-areas: 
+    "espeto espeto espeto"
+    "espeto espeto espeto"
+    "espeto espeto espeto"
+    "espeto espeto espeto"
+    "espeto espeto espeto"
+    "espeto espeto espeto";
+    padding: 20px;
+     
+}
+
+.container img{
+    width: 100%;
+    border-radius: 20px;
 }
 
 .espeto{
-    margin-bottom: 100px;
-    padding: 50px;
-    
+    max-width: 300px;
+    min-width: 250px;
+    height: 300px;
+    margin: 0px 20px 0px 40px;
+
 }
 
-.produtos img{
-    width: 100%;
-}
-
-@media (max-width:1050px){
-    .produtos{
-        display: block;
-        width: 80%;
+@media (max-width:1024px){
+    .container{
+        display: grid;
+        max-width: 1200px;
         margin: auto;
+        grid-template-areas: 
+        "espeto espeto"
+        "espeto espeto"
+        "espeto espeto"
+        "espeto espeto"
+        "espeto espeto"
+        "espeto espeto";
+         
     }
+
     .espeto{
-        margin-bottom: 200px;
+        max-width: 300px;
+        min-width: 250px;
+        height: 300px;
+        margin: auto;
+    
     }
 }
-/* Fim Cardápio*/
+
+@media (max-width:660px){
+    .container{
+        display: grid;
+        max-width: 1200px;
+        grid-row-gap:50px;
+        grid-template-areas: 
+        "espeto"
+        "espeto"
+        "espeto"
+        "espeto"
+        "espeto"
+        "espeto";
+         
+    }
+
+    .espeto{
+        max-width: 300px;
+        min-width: 250px;
+        height: 300px;
+        margin: auto;
+    
+    }
+
+}
