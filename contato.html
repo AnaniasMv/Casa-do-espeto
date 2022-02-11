@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <script src="https://kit.fontawesome.com/0cd6cdecb3.js" crossorigin="anonymous"></script>
+    <title>Contato</title>
+</head>
+
+<body>
+    <!----Menu---------->
+    <header>
+        <div class="center">
+            <div class="logo">
+                <img src="logonova.png" alt="Logotipo">
+            </div>
+            <div class="menu-desktop">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cardapio.html">Cardapio</a></li>
+                    <li><a href="localização.html">localização</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+
+            <div class="menu-mobile">
+                <a class="icon-menu"><i class="fas fa-bars"></i></a>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cardapio.html">Cardapio</a></li>
+                    <li><a href="localização.html">localização</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!----FIM MENU------>
+    <section class="txtform">
+        <h1>Fale conosco</h1>
+        <p>Tem dúvida sobre algum de nossos produtos ou serviços? Estamos aguardando seu <br>contato e ficaremos muito felizes em solucionar seja qual for sua dúvida ou necessidade.</p>
+        <p>(16)3412-3459</p>
+        <p>Rua: Av.Republica do libano,315 - Jardím cruzeiro do sul</p>
+        <p>São carlos - SP. CEP:13572081</p>
+
+    </section>
+    <main>
+        <form action="https://formsubmit.co/your@email.com" class="form" method="POST">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Mensagem</label>
+            <textarea name="message" placeholder="Escreva aqui"></textarea>
+            <input type="hidden" name="_next" value="http://localhost:8080/obrigado">
+            <button type="submit">Enviar</button>
+       </form>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        var menuBar = document.querySelector('.icon-menu');
+        menuBar.addEventListener('click', (e) => {
+            e.preventDefault();
+            let menuMobile = document.querySelector('.menu-mobile ul');
+            if (menuMobile.classList.contains('show-menu')) {
+                menuMobile.classList.remove('show-menu');
+            } else {
+                menuMobile.classList.add('show-menu');
+            }
+        });
+    </script>
+</body>
+
+</html>
