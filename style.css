@@ -182,27 +182,22 @@ header{
 .banner a{
     display: block;
     margin: auto;
-    margin-top: 310px;
+    margin-top:33vh;
     width: 220px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: lighter;
+    font-weight: bold;
     letter-spacing: 3px;
     font-size: 1.8vh; 
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #ee6306;
+    background-color: #ee7606;
     text-transform: uppercase;
-    padding: 25px;
+    padding: 22px;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.644);
 }
 
-@media (max-width:450px){
-    .banner a{
-        margin-top: 200px;
-    }
-}
 
 
 .banner a:hover{
@@ -225,18 +220,20 @@ header{
 
 
 /*RODAPÉ*/
+
 .rodape{
     display: flex;
-    padding: 75px;
-    background-color: #f17019;
-    margin: 0;
+    padding: 40px;
+    background-color: #ec711f;
+    justify-content: space-around;
   }
-  
-  
+
+ 
   .rodape li{
-      margin: auto;
+      margin: 50px;
       list-style: none;
   }
+
   
   .rodape h3 a{
       color: white;
