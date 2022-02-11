@@ -198,6 +198,12 @@ header{
     border: 1px solid rgba(0, 0, 0, 0.644);
 }
 
+@media (max-width:450px){
+    .banner a{
+        margin-top: 200px;
+    }
+}
+
 
 .banner a:hover{
     color: white;
