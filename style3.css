@@ -1,29 +1,9 @@
-
-* {
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300;400&display=swap');
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
-main{
-    margin: auto;
-    max-width: 1350px;
-    min-width: 320px;
-}
-
-body{
-    background-color: rgba(204, 204, 204, 0.219);
-}
-
-main h1{
-    margin-top: 20px;
-    text-align: center;
-    border: 2px solid rgba(0, 0, 0, 0.377);
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 2px;
-    font-weight: lighter;
-}
-
 
 /* MENU  */
 header{
@@ -128,99 +108,28 @@ header{
 /* FIM MENU */
 
 
-
-.container{
-    display: grid;
-    max-width: 1600px;
-    margin: auto;
-    grid-row-gap: 230px;
-    grid-column-gap: 130px;
-    grid-template-areas: 
-    "espeto espeto espeto"
-    "espeto espeto espeto"
-    "espeto espeto espeto"
-    "espeto espeto espeto"
-    "espeto espeto espeto"
-    "espeto espeto espeto";
-    padding: 20px;
+.localizaçao h2{
+    margin-top: 75px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    color: #f17019;
+    text-transform: uppercase;
 }
 
-.container img{
+.localizaçao p{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.localizaçao2{
+    margin-top: 50px;
     width: 100%;
-}
-
-.espeto{
-    max-width: 300px;
-    min-width: 250px;
-    height: 300px;
-    margin: auto;
+    height: 800px;
     text-align: center;
 }
-
-.conteudo{
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-}
-
-.conteudo h2{
-    letter-spacing: 2px;
-    margin: 10px;
-}
-
-.conteudo img{
-    width: 50px;
-    height: 50px;
-}
-
-@media (max-width:1050px){
-    .container{
-        display: grid;
-        max-width: 1600px;
-        grid-row-gap: 230px;
-        margin: auto;
-        grid-template-areas: 
-        "espeto espeto"
-        "espeto espeto"
-        "espeto espeto"
-        "espeto espeto"
-        "espeto espeto"
-        "espeto espeto";
-         
-    }
-
-    .espeto{
-        max-width: 300px;
-        min-width: 250px;
-        height: 300px;
-        margin: auto;
-        padding: 20px;
-    
-    }
-}
-
-@media (max-width:660px){
-    .container{
-        display: grid;
-        max-width: 1600px;
-        grid-row-gap:230px;
-        grid-template-areas: 
-        "espeto"
-        "espeto"
-        "espeto"
-        "espeto"
-        "espeto"
-        "espeto";
-         
-    }
-
-    .espeto{
-        max-width: 300px;
-        min-width: 250px;
-        height: 300px;
-        margin: auto;
-    
-    }
-}
+/* localização*/
 
 /*RODAPÉ*/
 
