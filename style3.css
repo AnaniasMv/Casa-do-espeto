@@ -102,7 +102,7 @@ header{
     color: rgba(0, 0, 0, 0.596);
 }
 
-@media (max-width:1393px){
+@media (max-width:1100px){
     .menu-mobile{display: block;}
     /*.menu-mobile ul{display: none;}*/
     .menu-desktop{
