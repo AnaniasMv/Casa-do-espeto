@@ -13,37 +13,24 @@
 </head>
 
 <body>
-    <!----Menu---------->
-    <header>
-        <div class="center">
-            <div class="logo">
-                <img src="logonova.png" alt="Logotipo">
-            </div>
-            <div class="menu-desktop">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="cardapio.html">Cardapio</a></li>
-                    <li><a href="localização.html">localização</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </div>
-            <!--Desktop-->
+   <!----Menu---------->
+   <header id="header">
+    <img src="logonova.png" alt="">
+    <nav id="nav">
+        <button id="btn-mobile" aria-expanded="false">Menu
+            <span id="hamburger">
 
-            <div class="menu-mobile">
-                <a class="icon-menu"><i class="fas fa-bars"></i></a>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="cardapio.html">Cardapio</a></li>
-                    <li><a href="localização.html">localização</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </div>
-            <!--Mobile-->
-
-        </div>
-        <!--Center-->
-    </header>
-    <!----FIM MENU------>
+            </span>
+        </button>
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="localização.html">Localização</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<!----FIM MENU------>
     <main class="container">
         <div class="espeto">
             <img src="imagens/espetinho_bovino_-_blog-2.jpg" alt="Espetinho de carne bovina">
@@ -205,22 +192,6 @@
 
     </main>
 
-
-
-    <script>
-        var menuBar = document.querySelector('.icon-menu');
-        menuBar.addEventListener('click', (e) => {
-            e.preventDefault();
-            let menuMobile = document.querySelector('.menu-mobile ul');
-            if (menuMobile.classList.contains('show-menu')) {
-                menuMobile.classList.remove('show-menu');
-            } else {
-                menuMobile.classList.add('show-menu');
-            }
-        });
-
-    </script>
-
     <!-- GetButton.io widget -->
 <script type="text/javascript">
     (function () {
@@ -258,7 +229,7 @@
 
 
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
