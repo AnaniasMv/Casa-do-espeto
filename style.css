@@ -225,7 +225,7 @@ footer{
     padding: 60px;
     font-size: 20px;
     justify-content: space-around;
-    background-color: #ff7b00f6;
+    background-color: #5C1F11;
 }
 
 footer ul{
@@ -237,8 +237,8 @@ footer ul{
 
 
 footer h2{
-    font-family:sans-serif;
-    color: #FFE604;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#FFE604 ;
 }
 
 @media(max-width:800px){
