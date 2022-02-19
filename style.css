@@ -35,6 +35,7 @@ header a{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 2px 2px 3px black;
 }
 
 #menu{
@@ -66,7 +67,7 @@ header a{
     display: none;
 }
 
-@media (max-width:600px){
+@media (max-width:905px){
     #menu{
         display: block;
         position: absolute;

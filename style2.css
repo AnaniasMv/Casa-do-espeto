@@ -12,7 +12,7 @@ main{
 }
 
 body{
-    background-color: rgba(204, 204, 204, 0.219);
+    background-color: rgba(204, 204, 204, 0.452);
 }
 
 main h1{
@@ -36,13 +36,13 @@ header a{
 
 #header{
     box-sizing: border-box;
+    background-color: white;
     height: 130px;
     padding: 1rem;
     display: flex;
-    background-color: white;
     align-items: center;
-    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.075);
     justify-content: space-around;
+    box-shadow: 2px 2px 3px rgba(204, 204, 204, 0.452);
 }
 
 #menu{
@@ -100,27 +100,29 @@ header a{
         font-size:20px;
         border-bottom: 2px solid rgba(0, 0, 0, .05);
         text-align: center;
-           line-height: 110px;
+        line-height: 110px;
         color: white;
     }
     #btn-mobile{
         display: flex;
         padding: .5rem 1rem;
-        font-size: 1rem;
+        font-size: 1.1rem;
         border: none;
         background: none;
         cursor: pointer;
         gap: .5rem;
+        color: black;
     }
     #hamburger{
-        border-top: 2px solid;
-        width: 20px;
+        border-top: 3px solid;
+        width: 25px;
+        color: black;
     }
     #hamburger::after, #hamburger::before{
         display: block;
         content: '';
-        width: 20px;
-        height: 2px;
+        width: 25px;
+        height: 3px;
         background: currentColor;
         margin-top: 5px;
         transition: .3s;
@@ -251,47 +253,45 @@ header a{
 }
 
 /*RODAPÉ*/
-
-footer picture{
-    margin-left: 5vw;
-    width: 300px;
-}
 footer{
     display: flex;
+    padding: 15px;
+    font-size: 20px;
     justify-content: space-around;
-    background-color: #ff7b00;
-    margin: auto;
-    padding: 100px;
+    background-color: #f08522;
 }
 
 footer ul{
-    margin: 20px;
+    padding: 20px;
     list-style: none;
-    font-size: 22px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
+    color: #e7e7e7;
 }
+
 
 footer h2{
     font-family:sans-serif;
-    color: #FFE604;
+    color: sienna;
 }
 
-
-
-@media(max-width:960px){
+@media(max-width:800px){
     footer{
-       display: block;
-       
+        display: block;
     }
+
     footer ul{
-        margin-left: 3vw;
+        margin-bottom: 20px;
     }
 
     footer h2{
         font-size: 23px;
+        position: relative;
+        top: -10px;
+        color: sienna;
     }
+    
 }
+
   /*FIM RODAPÉ*/
   
   
