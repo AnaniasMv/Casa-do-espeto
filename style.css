@@ -224,7 +224,7 @@ header a{
 /*RODAPÉ*/
 footer{
     display: flex;
-    padding: 60px;
+    padding: 15px;
     font-size: 20px;
     justify-content: space-around;
     background-color: #f08522;
@@ -240,6 +240,7 @@ footer ul{
 
 footer h2{
     font-family:sans-serif;
+    color: sienna;
 }
 
 @media(max-width:800px){
@@ -248,8 +249,14 @@ footer h2{
     }
 
     footer ul{
-        padding: 30px;
-        
+        margin-bottom: 20px;
+    }
+
+    footer h2{
+        font-size: 23px;
+        position: relative;
+        top: -10px;
+        color: sienna;
     }
     
 }
