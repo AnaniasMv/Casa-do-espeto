@@ -98,21 +98,23 @@ header a{
     #btn-mobile{
         display: flex;
         padding: .5rem 1rem;
-        font-size: 1rem;
+        font-size: 1.1rem;
         border: none;
         background: none;
         cursor: pointer;
         gap: .5rem;
+        color: black;
     }
     #hamburger{
-        border-top: 2px solid;
-        width: 20px;
+        border-top: 3px solid;
+        width: 25px;
+        color: black;
     }
     #hamburger::after, #hamburger::before{
         display: block;
         content: '';
-        width: 20px;
-        height: 2px;
+        width: 25px;
+        height: 3px;
         background: currentColor;
         margin-top: 5px;
         transition: .3s;
@@ -200,7 +202,7 @@ header a{
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #ee7606;
+    background-color: #ff7b00;
     text-transform: uppercase;
     padding: 22px;
     border-radius: 10px;
@@ -210,7 +212,7 @@ header a{
 
 .banner a:hover{
     color: white;
-    background-color: #ff9100c4;
+    background-color: #ff5e00;
     transition: background .4s;
 }
 
@@ -225,7 +227,7 @@ footer{
     padding: 60px;
     font-size: 20px;
     justify-content: space-around;
-    background-color: #5C1F11;
+    background-color: #f08522;
 }
 
 footer ul{
@@ -237,8 +239,7 @@ footer ul{
 
 
 footer h2{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:#FFE604 ;
+    font-family:sans-serif;
 }
 
 @media(max-width:800px){
