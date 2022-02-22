@@ -74,7 +74,7 @@ header a{
     display: none;
 }
 
-@media (max-width:600px){
+@media (max-width:915px){
     #menu{
         display: block;
         position: absolute;
@@ -150,15 +150,19 @@ header a{
     display: grid;
     max-width: 1600px;
     margin: auto;
-    grid-row-gap: 230px;
-    grid-column-gap: 130px;
+    grid-row-gap: 200px;
+    grid-column-gap: 90px;
     grid-template-areas: 
     "espeto espeto espeto"
     "espeto espeto espeto"
     "espeto espeto espeto"
     "espeto espeto espeto"
     "espeto espeto espeto"
+    "espeto espeto espeto"
+    "espeto espeto espeto"
+    "espeto espeto espeto"
     "espeto espeto espeto";
+    
     padding: 20px;
 }
 
@@ -210,7 +214,6 @@ header a{
         min-width: 250px;
         height: 300px;
         margin: auto;
-        padding: 20px;
     
     }
 }
@@ -219,7 +222,7 @@ header a{
     .container{
         display: grid;
         max-width: 1600px;
-        grid-row-gap:230px;
+        grid-row-gap:200px;
         grid-template-areas: 
         "espeto"
         "espeto"
