@@ -10,7 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0cd6cdecb3.js" crossorigin="anonymous"></script>
+
 </head>
+
+<style>
+    .select-estiloso {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 240px;
+        height: 34px;
+        overflow: hidden;
+        background: url(nova_setinha.jpg) no-repeat right white;
+        border: 1px solid #ccc;
+    }
+</style>
 
 <body>
     <!----Menu---------->
@@ -31,8 +44,18 @@
         </nav>
     </header>
     <!----FIM MENU------>
+
+    <section class="content">
+        <ul class="filter">
+            <li class="item" data-filter="todos">Espetos</li>
+            <li class="item" data-filter="doces">Espetos doces</li>
+            <li class="item" data-filter="caldos">Caldos quentes</li>
+        </ul>
+
+
+    </section>
     <main class="container">
-        <div class="espeto">
+        <div class="espeto item ">
             <img src="imagens/espetinho_bovino_-_blog-2.jpg" alt="Espetinho de carne bovina">
             <div class="conteudo">
                 <h2>Espetinho de Carne bovina </h2>
@@ -42,7 +65,7 @@
             </div>
         </div>
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/frango.jpg" alt="Espetinho de frango">
             <div class="conteudo">
                 <h2>Espetinho de Frango</h2>
@@ -51,7 +74,7 @@
             </div>
         </div>
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/IMG-Kafta.jpg" alt="Espetinho de kafta">
             <div class="conteudo">
                 <h2>Espetinho de Kafta</h2>
@@ -61,7 +84,7 @@
             </div>
         </div>
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/medfrango.jpg" alt="">
             <div class="conteudo">
                 <h2>Medalhão de frango</h2>
@@ -71,7 +94,7 @@
             </div>
         </div>
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/Med-mandioca.jpg" alt="Espetinho de medalhão de mandioca">
             <div class="conteudo">
                 <h2>Medalhão de mandioca</h2>
@@ -81,7 +104,7 @@
             </div>
         </div>
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/Med-mandioca.jpg" alt="Espetinho de medalhão de mandioca">
             <div class="conteudo">
                 <h2>Medalhão de mandioca c/ pimenta</h2>
@@ -92,7 +115,7 @@
         </div>
 
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/medquiabo.jpeg" alt="Espetinho de medalhão de quiabo">
             <div class="conteudo">
                 <h2>Medalhão de quiabo</h2>
@@ -102,7 +125,7 @@
             </div>
         </div>
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/Medalhão-de-Provolone.jpg" alt="Espetinho de medalhão de queijo">
             <div class="conteudo">
                 <h2>Medalhão de queijo</h2>
@@ -115,7 +138,7 @@
 
         </div>
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/espetinho-de-coracao.jpg" alt="Espetinho de coração">
             <div class="conteudo">
                 <h2>Espetinho de coração</h2>
@@ -126,7 +149,7 @@
         </div>
 
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/Pão de alho.jpg" alt="Espetinho de pão de alho">
             <div class="conteudo">
                 <h2> Espetinho de Pão de alho</h2>
@@ -137,7 +160,7 @@
         </div>
 
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/receita-de-espetinho-de-linguiça.jpg" alt="Espetinho de linguiça">
             <div class="conteudo">
                 <h2>Espetinho de linguiça</h2>
@@ -146,7 +169,7 @@
             </div>
         </div>
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/receita-de-espetinho-de-linguiça.jpg" alt="Espetinho de linguiça">
             <div class="conteudo">
                 <h2>Espetinho de linguiça c/pimenta</h2>
@@ -156,7 +179,7 @@
         </div>
 
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/costela porco.jpg" alt="Espetinho de costela de porco">
             <div class="conteudo">
                 <h2>Costela de porco</h2>
@@ -166,7 +189,7 @@
         </div>
 
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/costela boi.png" alt="Espetinho de Costela de boi">
             <div class="conteudo">
                 <h2>Costela de boi</h2>
@@ -176,7 +199,7 @@
         </div>
 
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/panceta.jpg" alt="Espetinho de Panceta">
             <div class="conteudo">
                 <h2>Panceta</h2>
@@ -185,7 +208,7 @@
             </div>
         </div>
 
-        <div class="espeto">
+        <div class="espeto item doces">
             <img src="imagens/queijo com chocolate.jpg" alt="Espetinho de Queijo com chocolate">
             <div class="conteudo">
                 <h2>Queijo com chocolate</h2>
@@ -195,7 +218,7 @@
         </div>
 
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/camarao.jpg" alt="Espetinho de Camarao">
             <div class="conteudo">
                 <h2>Espetinho de camarão</h2>
@@ -204,7 +227,7 @@
             </div>
         </div>
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/Tilapia.jpg" alt="Espetinho de Tilapia">
             <div class="conteudo">
                 <h2>Espetinho de tilapia</h2>
@@ -213,7 +236,7 @@
             </div>
         </div>
 
-        <div class="espeto">
+        <div class="espeto item">
             <img src="imagens/Espetinho-de-queijo-coalho.jpg" alt="Espetinho de Tilapia">
             <div class="conteudo">
                 <h2>Espetinho de Queijo</h2>
@@ -259,6 +282,15 @@
     <!---------FIM RODAPÉ--------->
 
     <script src="script.js"></script>
-</body>
 
+
+    <script>
+        $(document).ready(function() {
+            $(".filter .item").click(function(){
+                $(this).addClass("active").siblings().removeClass("active")
+            }
+        }
+    </script>
+    
+</body>
 </html>
